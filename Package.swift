@@ -4,7 +4,6 @@ import PackageDescription
 
 let package = Package(
     name: "tree-sitter",
-    platforms: [.macOS(.v10_13), .iOS(.v11)],
     products: [
         .library(name: "tree-sitter", targets: ["tree-sitter"]),
     ],
@@ -13,6 +12,6 @@ let package = Package(
         .target(name: "tree-sitter",
                 path: "lib",
                 sources: ["src/lib.c"],
-                publicHeadersPath: "include"),
+                publicHeadersPath: "include")
     ]
 )
