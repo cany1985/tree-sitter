@@ -147,4 +147,5 @@ jobs:
           script/generate-fixtures.cmd
 
       - name: Run main tests
-        run: script/test
+        run: script/test 
+
